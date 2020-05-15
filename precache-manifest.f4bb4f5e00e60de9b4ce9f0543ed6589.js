@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5a2f7e9d87a5b2b4a4d5fdeb1023f39e",
+    "revision": "0a6f7122a1c0cc79c9ec301f8e47201b",
     "url": "/WeatherFind/index.html"
   },
   {
-    "revision": "e40651d28c4de6c5e4b2",
+    "revision": "3b212279e4fc3cd5ac6d",
     "url": "/WeatherFind/static/css/main.b0fac68d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/WeatherFind/static/js/2.42d493be.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e40651d28c4de6c5e4b2",
-    "url": "/WeatherFind/static/js/main.50f11caf.chunk.js"
+    "revision": "3b212279e4fc3cd5ac6d",
+    "url": "/WeatherFind/static/js/main.2ba50d55.chunk.js"
   },
   {
     "revision": "f1711c9d811f24bc235e",
