@@ -9,7 +9,7 @@
 
 
 body{
-  font-family: 'Righteous', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -32,54 +32,64 @@ main{
 
 .brand {
   text-align: center;
-  font-size: x-large;
-  color: #313131;
-  text-shadow: 3px 3px rgba(255, 255, 255, 0.5);
+  font-size: large;
+  color: #000000;
+  text-shadow: 0px 0px 15px rgb(251, 251, 251);
+  font-family: 'Raleway', sans-serif;
+  border-bottom: 2px solid #fff;
 
 }
+
+
 
 .search-box{
+  align-items: center;
   width: 100%;
   margin: 0 0 75px;
+  color: brown !important;
+  
 }
+
+
 
 .search-box .search-bar{
   display: block;
   width: 100%;
-  padding: 15px;
+  padding: 18px;
   appearance: none;
   background: none;
   border: none;
   outline: none;
 
-  background-color: rgba( 255, 255, 255, 0.5) ;
+  background-color: rgba( 255, 255, 255, 0.8) ;
   border-radius: 16px 16px 16px 16px;
   margin-top: 35px;
   box-shadow: 0px 5px rgba(0,0,0,0.2) ;
 
-  color: #313131;
-  font-size: 20px;
+  color: black;
+  font-size: 10px;
 
-  transition: 0.2s ease-in;
+  transition: 0.2s ease-in !important;
 }
 
 .search-box .search-bar :focus{
-  background-color: rgba( 255, 255, 0, 0.1);
+  background-color: rgba( 255, 255, 0, 0.1) !important;
 }
 
 .location-box .location {
   color: #fff;
   font-size: 32px;
   font-weight: 500;
+  font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
   text-shadow: 3px 3px rgba( 50, 50, 70, 0.5);
 }
 
 .location-box .date{
-  color: #fff;
-  font-size: 20px;
-  font-weight: 300;
-  font-style: italic;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
   text-shadow: 2px 2px rgba( 50, 50, 70, 0.5);
 }
@@ -92,21 +102,110 @@ main{
   position: relative;
   display: inline-block;
   margin: 30px auto;
+  background-color: rgba( 255, 255, 255, 1);
+  border-radius: 16px;
+  padding: 7px 25px 0px 25px !important;
+  color: rgb(0, 0, 0);
+  font-size: 72px;
+  font-weight: 600;
+  font-family: 'Abril Fatface', cursive;
+  text-shadow: -3px 5px 5px rgb(77, 77, 128);
+  text-align: center;
+  box-shadow: -3px 6px 5px rgba(73, 57, 57, 0.8);
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.weather-box .temp p {
+  position: relative;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-shadow: -4px 3px 5px rgb(198, 198, 241);
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  padding: -10px;
+}
+
+
+.weather-box .weather {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: -3px 3px 6px rgba(197, 197, 230, 0.5);
+}
+
+.desc {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #ffffff;
+  text-transform: capitalize;
+  border-bottom: 3px solid whitesmoke;
+  margin-bottom: 30px !important;
+}
+
+
+.temperature{
+  position: relative;
+  display: inline-flexbox;
+  margin: 30px auto;
   background-color: rgba( 255, 255, 255, 0.2);
   border-radius: 16px;
   padding: 15px 25px;
   color: #fff;
-  font-size: 102px;
-  font-weight: 900;
-  text-shadow: 7px 6px rgba( 50, 50, 70, 0.5);
+  font-size: 22px;
+  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 0px 2px 10px rgba(195, 195, 248, 0.5);
   text-align: center;
-  box-shadow: 3px 6px rgba(0,0,0,0.2);
+  box-shadow: -13px 6px 9px rgba(48, 43, 43, 0.8);
+  border-bottom: 3px solid rgb(0, 0, 0);
 }
 
-.weather-box .weather {
-  color: #fff;
-  font-size: 48px;
-  font-weight: 700;
-  text-shadow: 3px 3px rgba( 50, 50, 70, 0.5);
+.temperature  p {
+  background-color: #000000;
+  box-shadow: -4px 4px 9px rgb(82, 77, 77);
+  border-radius: 50px;
+  padding: 2px auto !important;
+  margin: 15px 20px;
 }
 
+
+
+
+footer {
+  
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  height: 30px !important;
+  
+}
+
+
+footer a {
+  color: #fff !important;
+  font-size: 10px !important;
+}
+
+footer a :hover{
+  color: black;
+  border: 1px solid rgb(5, 247, 247);
+  padding: 2px;
+  border-radius: 50px;
+}
+
+
+
+
+
+
+/* import */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Rye&display=swap');
