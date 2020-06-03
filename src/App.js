@@ -60,9 +60,30 @@ function App() {
     
   }
 
+
+  //  background determiner
+
+  const bg = (weather,temp) => {
+    if (weather === "01d") {
+      return ("App clear");
+    } else if( weather === "02d" || weather === "03d" || weather === "04d") {
+      return("App cloud");
+    } else if( weather === "09d" || weather === "10d" ){
+      return("App rain");
+    } else if( weather === "11d"){
+      return("App thunder");
+    } else if (weather === "13d"){
+      return("App mist");
+    } else if(temp >16){
+      return("App warm");
+    } else if (temp <16){
+      return("App cold");
+    }
+  }
+
   return (
-    <div className={(typeof weather.main != "undefined") ? ((weather.main.temp >16) ? 'App warm' : 'App') : 'App'}>
- 
+    <div className={(typeof weather.main != "undefined") ? bg(weather.weather[0].icon,weather.main.temp) : 'App'}>
+             
       <main>
 
         {/* Search Box */}
@@ -70,7 +91,7 @@ function App() {
           <div className="col-12 col-sm-3"></div>
           <div className="col-12 col-sm-6">
           <div className="brand">
-           <h1><img src="https://img.icons8.com/nolan/64/autumn.png"/>WeatherFind </h1>
+           <h1><img src="https://img.icons8.com/nolan/96/smiling-sun.png"/>WeatherFind </h1>
          </div>
          <div className="search-box">
            <input 
