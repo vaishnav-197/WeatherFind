@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e0438b05896d1ef871a2579cd6048d2a",
+    "revision": "58b95b6d8a146ff5e30657abed550b41",
     "url": "/WeatherFind/index.html"
   },
   {
-    "revision": "87db5f09da339011bc31",
-    "url": "/WeatherFind/static/css/main.05011a1a.chunk.css"
+    "revision": "bdd89e6239b29aee1431",
+    "url": "/WeatherFind/static/css/main.4ef4d682.chunk.css"
   },
   {
     "revision": "8e2ea4dfcd990a5c8590",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/WeatherFind/static/js/2.42d493be.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "87db5f09da339011bc31",
-    "url": "/WeatherFind/static/js/main.4a145b83.chunk.js"
+    "revision": "bdd89e6239b29aee1431",
+    "url": "/WeatherFind/static/js/main.98d7dd2b.chunk.js"
   },
   {
     "revision": "f1711c9d811f24bc235e",
@@ -44,8 +44,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/WeatherFind/static/media/snow-bg.8812fa0c.jpg"
   },
   {
-    "revision": "93efb3da125a2cd87f782248fcff05bb",
-    "url": "/WeatherFind/static/media/thunder-bg.93efb3da.jpg"
+    "revision": "4165225113803192dfcbf5685f1783cb",
+    "url": "/WeatherFind/static/media/thunder-bg.41652251.jpg"
   },
   {
     "revision": "2578531a025c7a84f7ead0ef508a8adf",

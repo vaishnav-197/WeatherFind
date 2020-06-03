@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/WeatherFind/static/css/main.05011a1a.chunk.css",
-    "main.js": "/WeatherFind/static/js/main.4a145b83.chunk.js",
-    "main.js.map": "/WeatherFind/static/js/main.4a145b83.chunk.js.map",
+    "main.css": "/WeatherFind/static/css/main.4ef4d682.chunk.css",
+    "main.js": "/WeatherFind/static/js/main.98d7dd2b.chunk.js",
+    "main.js.map": "/WeatherFind/static/js/main.98d7dd2b.chunk.js.map",
     "runtime-main.js": "/WeatherFind/static/js/runtime-main.6b673139.js",
     "runtime-main.js.map": "/WeatherFind/static/js/runtime-main.6b673139.js.map",
     "static/js/2.42d493be.chunk.js": "/WeatherFind/static/js/2.42d493be.chunk.js",
     "static/js/2.42d493be.chunk.js.map": "/WeatherFind/static/js/2.42d493be.chunk.js.map",
     "index.html": "/WeatherFind/index.html",
-    "precache-manifest.9a96735d41024ede0cfd3479bde18d2d.js": "/WeatherFind/precache-manifest.9a96735d41024ede0cfd3479bde18d2d.js",
+    "precache-manifest.9d7cfc2b6d0aea0ca5f0c8dee5ed808f.js": "/WeatherFind/precache-manifest.9d7cfc2b6d0aea0ca5f0c8dee5ed808f.js",
     "service-worker.js": "/WeatherFind/service-worker.js",
-    "static/css/main.05011a1a.chunk.css.map": "/WeatherFind/static/css/main.05011a1a.chunk.css.map",
+    "static/css/main.4ef4d682.chunk.css.map": "/WeatherFind/static/css/main.4ef4d682.chunk.css.map",
     "static/js/2.42d493be.chunk.js.LICENSE.txt": "/WeatherFind/static/js/2.42d493be.chunk.js.LICENSE.txt",
     "static/media/index.css": "/WeatherFind/static/media/warm-bg.2578531a.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6b673139.js",
     "static/js/2.42d493be.chunk.js",
-    "static/css/main.05011a1a.chunk.css",
-    "static/js/main.4a145b83.chunk.js"
+    "static/css/main.4ef4d682.chunk.css",
+    "static/js/main.98d7dd2b.chunk.js"
   ]
 }
