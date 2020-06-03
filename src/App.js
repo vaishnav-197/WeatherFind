@@ -1,5 +1,8 @@
 import React , {useState} from 'react';
-import forecast from './components/forecast';
+import {BrowserRouter as Router , Switch , Route} from 'react-router-dom';
+import ErrorPage from './error/ErrorPage';
+import Forecast from './components/Forecast';
+
 
 
 const api = {
@@ -85,7 +88,7 @@ function App() {
     <div className={(typeof weather.main != "undefined") ? bg(weather.weather[0].icon,weather.main.temp) : 'App'}>
              
       <main>
-
+           
         {/* Search Box */}
         <div className="row">
           <div className="col-12 col-sm-3"></div>
@@ -111,7 +114,7 @@ function App() {
         </div>
          {/* End of Search Box */}
 
-
+         
 
 
          {/* weather contents */}
@@ -122,8 +125,10 @@ function App() {
 
          <div className="col-12 col-lg-4 ">
            {/* weather box */}
+           { (weather.cod === "404") ? <ErrorPage/> : null}
          {(typeof weather.main != "undefined") ?(
            <div>
+             
               <div className="location-box">
                   <div className="location">{weather.name} , {weather.sys.country}</div>
                   <div className="date">{dateBuilder(new Date())}</div>
@@ -165,6 +170,7 @@ function App() {
             {/* max and min component */}
             
               {(typeof weather.main != "undefined") ?(
+                <div className="more">
                 <div className="temperature" id="de">
                   <p>Max : {weather.main.temp_max}°c <br/></p>
                   <p>Min : {weather.main.temp_min}°c <br/></p>
@@ -173,6 +179,7 @@ function App() {
                   <p>  Sunset : { dateConverter( weather.sys.sunset)} </p>                
                   
                 </div>
+                </div>
               ):(
               null
               )
@@ -180,15 +187,17 @@ function App() {
             
          </div>
 
-
-
-
-         <div className="col-12 col-lg-4">
-            
-            <forecast/>   
-            
+         <div className="col-12 col-lg-4 forecast">
+           {(typeof weather.main != "undefined") ? (
+           
+           <Forecast />)
+           
+           : null}
+           
          </div>
 
+         
+      
          </div>  
             
       </main>
@@ -202,6 +211,9 @@ function App() {
            <p>❤️ vaishnav | <a href="https://github.com/vaishnav-197/WeatherFind.git"> <i className="fa fa-github"></i></a>  </p>
                     
       </footer>
+
+
+
       
     </div>
   );

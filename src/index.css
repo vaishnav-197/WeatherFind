@@ -129,7 +129,7 @@ main{
 .weather-box .temp{
   position: relative;
   display: inline-block;
-  margin: 30px auto;
+  margin: 19px auto;
   background-color: rgba( 255, 255, 255, 1);
   border-radius: 16px;
   padding: 7px 25px 0px 25px !important;
@@ -170,19 +170,19 @@ main{
   color: #ffffff;
   text-transform: capitalize;
   border-bottom: 3px solid whitesmoke;
-  margin-bottom: 30px !important;
+  margin-bottom: auto !important;
 }
 
 
 .temperature{
   position: relative;
   display: inline-flexbox;
-  margin: 30px auto;
+  margin: 100px auto;
   background-color: rgba( 255, 255, 255, 0.2);
   border-radius: 16px;
   padding: 15px 25px;
   color: #fff;
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 300;
   font-family: 'Raleway', sans-serif;
   text-shadow: 0px 2px 10px rgba(195, 195, 248, 0.5);
@@ -197,6 +197,12 @@ main{
   border-radius: 50px;
   padding: 2px auto !important;
   margin: 15px 20px;
+}
+
+
+.more {
+  
+  border-bottom: 2px solid #fff;
 }
 
 
@@ -223,8 +229,6 @@ footer a {
 
 footer a :hover{
   color: crimson;
-  font-size: small;
-  padding: 2px;
   
 }
 

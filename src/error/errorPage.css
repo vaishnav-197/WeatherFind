@@ -1,0 +1,14 @@
+.error {
+    font-family: 'Raleway', sans-serif;
+    color: aliceblue;
+}
+
+.error h1{
+    font-weight: bolder;
+    text-shadow: -3px 4px 10px black;
+}
+
+.error h2{
+    font-weight: bolder;
+    text-shadow: -3px 4px 10px black;
+}
