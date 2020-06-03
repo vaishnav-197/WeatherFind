@@ -54,7 +54,7 @@ function App() {
   const dateConverter = (epooch) => {
     epooch = epooch*1000;
     let myDate = new Date(epooch);
-    myDate = myDate.toLocaleString()
+    myDate = myDate.toLocaleString();
     // myDate = myDate.getTime();
     return myDate;
     
@@ -64,20 +64,20 @@ function App() {
   //  background determiner
 
   const bg = (weather,temp) => {
-    if (weather === "01d") {
-      return ("App clear");
-    } else if( weather === "02d" || weather === "03d" || weather === "04d") {
-      return("App cloud");
+    if( weather === "02d" || weather === "03d" || weather === "04d") {
+       return("App cloud");
     } else if( weather === "09d" || weather === "10d" ){
-      return("App rain");
+       return("App rain");
     } else if( weather === "11d"){
-      return("App thunder");
+       return("App thunder");
+    } else if (weather === "50d"){
+       return("App mist");
     } else if (weather === "13d"){
-      return("App mist");
+        return("App snow");
     } else if(temp >16){
-      return("App warm");
+       return("App warm");
     } else if (temp <16){
-      return("App cold");
+       return("App cold");
     }
   }
 
@@ -114,7 +114,7 @@ function App() {
 
 
 
-
+         {/* weather contents */}
          
 
           <div className="row">
@@ -161,7 +161,7 @@ function App() {
 
 
 
-         <div className="col-12 col-lg-4 details">
+         <div className="col-12 col-lg-4  details">
             {/* max and min component */}
             
               {(typeof weather.main != "undefined") ?(
@@ -189,31 +189,17 @@ function App() {
             
          </div>
 
-         </div>
-         
- 
-
-         
-
-
-           
-
-          
-
-          
-
-
-
-
-
-
-
-
-          
+         </div>  
             
       </main>
+
+
+
+      {/* Footer */}
+
+
       <footer>
-           <p>❤️ vaishnav | <a href="https://github.com/vaishnav-197/WeatherFind.git"> <i className="fa fa-github"></i></a> <a href="https://icons8.com/icon/80651/summer">icon by Icons8</a> </p>
+           <p>❤️ vaishnav | <a href="https://github.com/vaishnav-197/WeatherFind.git"> <i className="fa fa-github"></i></a>  </p>
                     
       </footer>
       
